@@ -2,9 +2,9 @@ const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 const express = require('express');
 const app = express();
-const token = '6205377795:AAFg1usVs65qUEMvYGtcM1fGC9CPqmvVfxg';
-const omdbApiKey = '8159c9b';
-var a=0;
+const token = ' //YOU SHOULD ENTER YOUR TOKEN\\';
+const omdbApiKey = '//YOU SHOULD ENTER YOUR API KEY\\';
+
 const bot = new TelegramBot(token, { polling: true });
 bot.on("message", async (msg) => {
   msg.text= msg.text.toLowerCase();
@@ -56,9 +56,9 @@ bot.onText(/\/movie (.+)/, async (msg, match) => {
 });
 if(a==0){
 const { Configuration, OpenAIApi } = require('openai');
-const botToken = '6205377795:AAFg1usVs65qUEMvYGtcM1fGC9CPqmvVfxg';
+const botToken = '//YOU SHOULD ENTER YOUR TOKEN\\';
 
-const openaiApiKey = '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';
+const openaiApiKey = '//YOU SHOULD ENTER YOUR API KEY\\';
 
 
 
